@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reviews - Cafe Amour</title>
+  <style>
+    body { font-family: Arial; }
+    header { background: brown; color: white; text-align: center; padding: 10px; }
+    nav a { color: white; margin: 0 5px; text-decoration: none; }
+    .review { background: #f2dede; margin: 10px; padding: 10px; }
+    form { margin: 10px; padding: 10px; background: #f9e6e6; }
+    label { display: block; margin-top: 5px; }
+    button { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cafe Amour Reviews</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservation.html">Reserve</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+      <a href="review.html">Reviews</a>
+    </nav>
+  </header>
+
+  <h2>Customer Reviews</h2>
+  <div class="review"><b>Priya:</b> Loved the coffee! ⭐⭐⭐⭐⭐</div>
+  <div class="review"><b>Arjun:</b> Nice ambiance. ⭐⭐⭐⭐</div>
+  <div class="review"><b>Meera:</b> Great vegan options. ⭐⭐⭐⭐⭐</div>
+
+  <h2>Write Your Review</h2>
+  <form id="reviewForm">
+    <label>Name:</label>
+    <input type="text" id="name">
+    <label>Your Review:</label>
+    <textarea id="comment"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("reviewForm").onsubmit = function(e) {
+      e.preventDefault();
+      var name = document.getElementById("name").value;
+      var comment = document.getElementById("comment").value;
+      alert("Thank you " + name + "! Your review: " + comment);
+    };
+  </script>
+</body>
+</html>

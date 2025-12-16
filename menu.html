@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu - Cafe Amour</title>
+  <style>
+    body { font-family: Arial; margin:0; background:#fff8f0; }
+    header { background:#b22222; color:white; text-align:center; padding:15px; }
+    nav a { margin:0 10px; color:white; text-decoration:none; }
+    .menu { padding:20px; background:#fff0f5; }
+    .menu h2 { color:#b22222; margin-top:20px; }
+    .menu ul { list-style:none; padding:0; }
+    .menu li { padding:5px 0; border-bottom:1px solid #ddd; cursor:pointer; }
+    .menu li:hover { background:#ffe4e1; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cafe Amour Menu</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservation.html">Reserve Table</a>
+      <a href="order.html">Order Online</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <section class="menu">
+    <h2>Starters</h2>
+    <ul>
+      <li onclick="orderItem('Garlic Bread')">Garlic Bread – ₹120</li>
+      <li onclick="orderItem('Cheese Nachos')">Cheese Nachos – ₹150</li>
+      <li onclick="orderItem('Tomato Soup')">Tomato Soup – ₹100</li>
+    </ul>
+    <h2>Main Course</h2>
+    <ul>
+      <li onclick="orderItem('Margherita Pizza')">Margherita Pizza – ₹350</li>
+      <li onclick="orderItem('Pasta Alfredo')">Pasta Alfredo – ₹300</li>
+      <li onclick="orderItem('Paneer Butter Masala')">Paneer Butter Masala – ₹280</li>
+    </ul>
+    <h2>Desserts</h2>
+    <ul>
+      <li onclick="orderItem('Chocolate Brownie')">Chocolate Brownie – ₹180</li>
+      <li onclick="orderItem('Red Velvet Cake')">Red Velvet Cake – ₹200</li>
+      <li onclick="orderItem('Ice Cream Sundae')">Ice Cream Sundae – ₹150</li>
+    </ul>
+    <h2>Drinks</h2>
+    <ul>
+      <li onclick="orderItem('Cappuccino')">Cappuccino – ₹120</li>
+      <li onclick="orderItem('Cold Coffee')">Cold Coffee – ₹150</li>
+      <li onclick="orderItem('Fresh Lime Soda')">Fresh Lime Soda – ₹100</li>
+    </ul>
+  </section>
+  <script>
+    function orderItem(itemName) {
+      alert("You selected: " + itemName + ". Please proceed to Order Online!");
+    }
+  </script>
+</body>
+</html>
